@@ -1,0 +1,121 @@
+<sequence_node size='3'>
+  <variable_declaration_node name='x' qualifier='private' type='integer'>
+  </variable_declaration_node>
+  <variable_declaration_node name='y' qualifier='private' type='integer'>
+  </variable_declaration_node>
+  <function_definition_node name='og' qualifier='public' type='integer'>
+    <arguments>
+    </arguments>
+    <block>
+      <block_node>
+        <declarations>
+        </declarations>
+        <instructions>
+          <sequence_node size='2'>
+            <for_node>
+              <initializations>
+                <sequence_node size='1'>
+                  <assignment_node>
+                    <variable_node> y</variable_node>
+                    <integer_node>1</integer_node>
+                  </assignment_node>
+                </sequence_node>
+              </initializations>
+              <conditions>
+                <sequence_node size='1'>
+                  <le_node>
+                    <rvalue_node>
+                      <variable_node> y</variable_node>
+                    </rvalue_node>
+                    <integer_node>3</integer_node>
+                  </le_node>
+                </sequence_node>
+              </conditions>
+              <increments>
+                <sequence_node size='1'>
+                  <assignment_node>
+                    <variable_node> y</variable_node>
+                    <add_node>
+                      <rvalue_node>
+                        <variable_node> y</variable_node>
+                      </rvalue_node>
+                      <integer_node>1</integer_node>
+                    </add_node>
+                  </assignment_node>
+                </sequence_node>
+              </increments>
+              <instruction>
+                <for_node>
+                  <initializations>
+                    <sequence_node size='1'>
+                      <assignment_node>
+                        <variable_node> x</variable_node>
+                        <integer_node>1</integer_node>
+                      </assignment_node>
+                    </sequence_node>
+                  </initializations>
+                  <conditions>
+                    <sequence_node size='1'>
+                      <le_node>
+                        <rvalue_node>
+                          <variable_node> x</variable_node>
+                        </rvalue_node>
+                        <integer_node>6</integer_node>
+                      </le_node>
+                    </sequence_node>
+                  </conditions>
+                  <increments>
+                    <sequence_node size='1'>
+                      <assignment_node>
+                        <variable_node> x</variable_node>
+                        <add_node>
+                          <rvalue_node>
+                            <variable_node> x</variable_node>
+                          </rvalue_node>
+                          <integer_node>1</integer_node>
+                        </add_node>
+                      </assignment_node>
+                    </sequence_node>
+                  </increments>
+                  <instruction>
+                    <if_else_node>
+                      <condition>
+                        <eq_node>
+                          <mod_node>
+                            <rvalue_node>
+                              <variable_node> x</variable_node>
+                            </rvalue_node>
+                            <integer_node>2</integer_node>
+                          </mod_node>
+                          <integer_node>1</integer_node>
+                        </eq_node>
+                      </condition>
+                      <then>
+                        <continue_node>
+                        </continue_node>
+                      </then>
+                      <else>
+                        <write_node>
+                          <sequence_node size='1'>
+                            <rvalue_node>
+                              <variable_node> x</variable_node>
+                            </rvalue_node>
+                          </sequence_node>
+                        </write_node>
+                      </else>
+                    </if_else_node>
+                  </instruction>
+                </for_node>
+              </instruction>
+            </for_node>
+            <return_node>
+              <sequence_node size='1'>
+                <integer_node>0</integer_node>
+              </sequence_node>
+            </return_node>
+          </sequence_node>
+        </instructions>
+      </block_node>
+    </block>
+  </function_definition_node>
+</sequence_node>

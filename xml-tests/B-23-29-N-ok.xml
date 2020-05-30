@@ -1,0 +1,40 @@
+<sequence_node size='1'>
+  <function_definition_node name='og' qualifier='public' type='integer'>
+    <arguments>
+    </arguments>
+    <block>
+      <block_node>
+        <declarations>
+        </declarations>
+        <instructions>
+          <sequence_node size='2'>
+            <if_else_node>
+              <condition>
+                <integer_node>2</integer_node>
+              </condition>
+              <then>
+                <write_node>
+                  <sequence_node size='1'>
+                    <string_node>KO</string_node>
+                  </sequence_node>
+                </write_node>
+              </then>
+              <else>
+                <write_node>
+                  <sequence_node size='1'>
+                    <string_node>OK</string_node>
+                  </sequence_node>
+                </write_node>
+              </else>
+            </if_else_node>
+            <return_node>
+              <sequence_node size='1'>
+                <integer_node>0</integer_node>
+              </sequence_node>
+            </return_node>
+          </sequence_node>
+        </instructions>
+      </block_node>
+    </block>
+  </function_definition_node>
+</sequence_node>

@@ -1,0 +1,137 @@
+<sequence_node size='2'>
+  <variable_declaration_node name='a' qualifier='private' type=''>
+    <value>
+      <tuple_node>
+        <sequence_node size='3'>
+          <integer_node>3</integer_node>
+          <double_node>61</double_node>
+          <string_node>string1</string_node>
+        </sequence_node>
+      </tuple_node>
+    </value>
+  </variable_declaration_node>
+  <function_definition_node name='og' qualifier='public' type='integer'>
+    <arguments>
+    </arguments>
+    <block>
+      <block_node>
+        <declarations>
+        </declarations>
+        <instructions>
+          <sequence_node size='10'>
+            <write_node>
+              <sequence_node size='1'>
+                <rvalue_node>
+                  <tuple_indexing_node>
+                    <base>
+                      <string_node>a</string_node>
+                    </base>
+                      <tuple_indexing_node>value='1'</tuple_indexing_node>
+                  </tuple_indexing_node>
+                </rvalue_node>
+              </sequence_node>
+            </write_node>
+            <evaluation_node>
+              <assignment_node>
+                <tuple_indexing_node>
+                  <base>
+                    <string_node>a</string_node>
+                  </base>
+                    <tuple_indexing_node>value='1'</tuple_indexing_node>
+                </tuple_indexing_node>
+                <integer_node>5</integer_node>
+              </assignment_node>
+            </evaluation_node>
+            <write_node>
+              <sequence_node size='1'>
+                <rvalue_node>
+                  <tuple_indexing_node>
+                    <base>
+                      <string_node>a</string_node>
+                    </base>
+                      <tuple_indexing_node>value='1'</tuple_indexing_node>
+                  </tuple_indexing_node>
+                </rvalue_node>
+              </sequence_node>
+            </write_node>
+            <write_node>
+              <sequence_node size='1'>
+                <rvalue_node>
+                  <tuple_indexing_node>
+                    <base>
+                      <string_node>a</string_node>
+                    </base>
+                      <tuple_indexing_node>value='2'</tuple_indexing_node>
+                  </tuple_indexing_node>
+                </rvalue_node>
+              </sequence_node>
+            </write_node>
+            <evaluation_node>
+              <assignment_node>
+                <tuple_indexing_node>
+                  <base>
+                    <string_node>a</string_node>
+                  </base>
+                    <tuple_indexing_node>value='2'</tuple_indexing_node>
+                </tuple_indexing_node>
+                <double_node>62</double_node>
+              </assignment_node>
+            </evaluation_node>
+            <write_node>
+              <sequence_node size='1'>
+                <rvalue_node>
+                  <tuple_indexing_node>
+                    <base>
+                      <string_node>a</string_node>
+                    </base>
+                      <tuple_indexing_node>value='2'</tuple_indexing_node>
+                  </tuple_indexing_node>
+                </rvalue_node>
+              </sequence_node>
+            </write_node>
+            <write_node>
+              <sequence_node size='1'>
+                <rvalue_node>
+                  <tuple_indexing_node>
+                    <base>
+                      <string_node>a</string_node>
+                    </base>
+                      <tuple_indexing_node>value='3'</tuple_indexing_node>
+                  </tuple_indexing_node>
+                </rvalue_node>
+              </sequence_node>
+            </write_node>
+            <evaluation_node>
+              <assignment_node>
+                <tuple_indexing_node>
+                  <base>
+                    <string_node>a</string_node>
+                  </base>
+                    <tuple_indexing_node>value='3'</tuple_indexing_node>
+                </tuple_indexing_node>
+                <string_node>string2</string_node>
+              </assignment_node>
+            </evaluation_node>
+            <write_node>
+              <sequence_node size='1'>
+                <rvalue_node>
+                  <tuple_indexing_node>
+                    <base>
+                      <string_node>a</string_node>
+                    </base>
+                      <tuple_indexing_node>value='3'</tuple_indexing_node>
+                  </tuple_indexing_node>
+                </rvalue_node>
+              </sequence_node>
+            </write_node>
+            <return_node>
+              <sequence_node size='1'>
+                <integer_node>0</integer_node>
+              </sequence_node>
+            </return_node>
+          </sequence_node>
+        </instructions>
+      </block_node>
+    </block>
+  </function_definition_node>
+</sequence_node>
